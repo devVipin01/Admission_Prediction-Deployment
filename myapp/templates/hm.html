@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+   
+   <head>
+      <title>home page</title>
+      <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+   </head>	
+   <body>
+    <div style = "background-color:red;text-align:center; clear:both">
+
+        <h1> Welcome to admission Project</h1>
+
+     </div> 
+   
+    
+    <img src="{% static 'Picture2.png' %}" alt="Main_Picture" style="width:40%">
+    
+    <h2>about us</h2>
+    
+    <p>Students are often worried about their chances of admission in graduate and post graduate school. This Project gives them a fair idea about their admission chances in a particular university. 
+This Project should also help students who are currently preparing or will be preparing to get a better idea. </p>
+    
+    <div style = "background-color:#b5dcb3;text-align:center; clear:both">
+        <h1>cleck here to  check Your chance of admission</h1>
+        
+      <a href = "{% url 'display' %}" target = "_blank">check chance of admission</a>
+    </div> 
+    <div style = "color:green">
+      <h4>Project Aim</h4>
+     <ul>
+         <li>This Model help students in shortlisting universities with their profiles.</li>
+         <li>To Extract important and useful data from Admission dataset. </li>
+         <li>Predicting chance of admission on new data</li>
+      </ul>
+      <p>Contect us :-
+      <a href = "mailto: gangwar7540@gmail.com">gangwar7540@gmail.com</a> </p>
+
+      <div style = "background-color:#b5dcb3; clear:both">
+        <center>
+           Copyright © 2020 AdmissionPrediction.com
+        </center>
+     </div>
+      
+   </div>
+   
+   
+</html>

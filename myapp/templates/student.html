@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+
+<body>
+<h1>Student Data </h1>
+
+<form action="save" method="POST">
+
+{% csrf_token %}
+
+Name:<input type="text" name="ht_name"><br>
+Mobile: <input type="number" name="ht_Mnum"/><br/>
+Gender: <input type="text" name="ht_Male"/><br/>
+TOFEL: <input type="number" name="ht_tofel"/><br/>
+GRE: <input type="number" name="ht_gre"/><br/>
+University: <input type="number" name="ht_Uni_rating"/><br/>
+SOP: <input type="number" name="ht_sop"/><br/>
+LOR: <input type="number" name="ht_lor"/><br/>
+CGPA: <input type="number" name="ht_cgpa"/><br/>
+Research:<input type="number" name="ht_research"><br>
+
+
+<input type="submit" value="Submit"/>
+</form>
+</body>
+
+</html>
